@@ -20,7 +20,7 @@ app.get("/", (req, res, next) => {
 });
 
 // Insert here other API endpoints
-app.get("/api/users", (req, res, next) => {
+app.get("/", (req, res, next) => {
     var sql = "select * from user"
     var params = []
     db.all(sql, params, (err, rows) => {
